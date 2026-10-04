@@ -14,8 +14,12 @@ labelled as such, with no verdict):
 
 1. **Sparse addressing works, and it is a big effect.** A fixed random sparse code recalls 0.99 of
    128 stored pairs where dense keys recall 0.37, at equal active rows per token (E1; 5 seeds,
-   replicated on 6 fresh seeds). This is the fly's Kenyon-cell coding principle, and it holds up.
-   (Equal active rows is not equal compute: the expansion itself costs arithmetic; finding 7.)
+   replicated on 6 fresh seeds). This is the Kenyon-cell coding principle, and at the module level it
+   holds. It is also prior art rather than a discovery: sparse, high-dimensional addressing with a
+   fixed random expansion is Kanerva's sparse distributed memory (1988), and the fly circuit's
+   version was formalised as a locality-sensitive hash by Dasgupta, Stevens and Navlakha (Science,
+   2017); E1 shows that it transfers to a gated-delta memory, not that it is new. (Equal active
+   rows is not equal compute: the expansion itself costs arithmetic; finding 7.)
 2. **The history states alone do nothing.** Giving a learned write gate the "how often was this
    address confirmed or contradicted" states did not help on a single memory store (E2). Putting
    the same states on a two-store memory with a learned readout also did nothing at first (E3).
@@ -206,7 +210,7 @@ stratum, learning curves) in `experiments/p3_s1_hybrid/figures/`. Versions: [`CH
 pip install -e ".[dev,bench]"             # plus the CUDA build of torch for the GPU experiments
 bash scripts/fetch_data.sh                # raw connectome (68 MB) + small corpora; not committed; checksums in data/SHA256SUMS
 python scripts/verify_circuits.py         # re-extract and verify the MB / CX circuits
-python -m pytest -q                       # 129 tests: loaders, shuffle invariants, modules, the chunked layer's exactness, the harness
+python -m pytest -q                       # 124 tests: loaders, shuffle invariants, modules, the chunked layer's exactness, the harness (one needs the fetched TinyShakespeare corpus and skips without it)
 
 # phase 1 (CPU)
 python experiments/h5_graph_mask/run.py   # each experiment reads its PREREG.md, freezes its hash, runs the seed x LR grid, writes SUMMARY.md

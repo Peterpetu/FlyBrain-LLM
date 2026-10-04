@@ -1,7 +1,7 @@
 # FlyAI design, v0.2 — decisions after the literature sweep and the design panel
 
 *Synthesis of docs/aif/AXIOMS.md, docs/aif/MODEL_SPEC.md (v0/v0.1), docs/aif/LITERATURE.md
-(13-agent sweep) and docs/aif/DESIGN_PANEL.md (three independent revision proposals scored by
+(the literature sweep) and docs/aif/DESIGN_PANEL.md (three independent revision proposals scored by
 two judges). Written before any AIF experiment ran; the experiments' PREREG files reference
 this document.*
 
