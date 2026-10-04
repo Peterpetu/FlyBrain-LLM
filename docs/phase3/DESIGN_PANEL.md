@@ -27,7 +27,7 @@ WHY IT COULD MATTER FOR LANGUAGE. Every 2024-2026 fast-weight layer — DeltaNet
 
 PROPOSITION (separation). Let a layer's state be a single matrix updated as S_t = A_t (*) S_{t-1} + k_t g_t^T, with g_t any function of the token and of S_{t-1}^T k_t. Take history H_A: address a never written. History H_B: address a written with +v, then with -v at the same gate. Both leave S^T a = 0, so every read, every gate value and every statistic derived from the state at a is identical forever after. Any evidence channel that accumulates |written residual| at a returns 0 under H_A and ~2 beta |v| under H_B. QED. (Caveat stated honestly: the separation is at that address; a model with more state could encode it elsewhere — the claim is that no shipped architecture does, and that this is the cheapest sufficient statistic.)
 
-MEASURED THIS SESSION (numpy, sparse 32-of-2048 address, 96 keys, 96 distractor writes, gated delta store). Three address classes — never-written, written-once-consistently, written-then-contradicted. By |error|, which is ALL a Gated DeltaNet or Titans gate can see: novel 12.98, clean 5.82, contradicted 6.19 — clean and contradicted are indistinguishable, and novel-vs-contradicted AUROC is 0.000, i.e. error orders them exactly BACKWARDS relative to how hard you should write. By a one-scalar-per-address evidence channel with the crosstalk floor removed: novel 6.48, clean 43.51, contradicted 101.78 — monotone, with novel-vs-contradicted AUROC 1.000 and clean-vs-contradicted AUROC 0.955. No monotone function of the instantaneous error can produce that ordering.
+MEASURED FOR THIS NOTE (numpy, sparse 32-of-2048 address, 96 keys, 96 distractor writes, gated delta store). Three address classes — never-written, written-once-consistently, written-then-contradicted. By |error|, which is ALL a Gated DeltaNet or Titans gate can see: novel 12.98, clean 5.82, contradicted 6.19 — clean and contradicted are indistinguishable, and novel-vs-contradicted AUROC is 0.000, i.e. error orders them exactly BACKWARDS relative to how hard you should write. By a one-scalar-per-address evidence channel with the crosstalk floor removed: novel 6.48, clean 43.51, contradicted 101.78 — monotone, with novel-vs-contradicted AUROC 1.000 and clean-vs-contradicted AUROC 0.955. No monotone function of the instantaneous error can produce that ordering.
 
 This is why the write gate should not be tuned harder: it should be given an input it currently cannot compute. The three downstream uses are exactly the fly's: precision-weighted writing (do not overwrite a heavily attested address on one noisy observation; do write hard at a novel one), active forgetting (clear high-conflict addresses faster — A7), and recall-gated, spacing-gated consolidation (A8; the slow write needs a confidence, and this is it).
 
@@ -89,10 +89,10 @@ Inputs x_t in R^d. Per head, with short causal conv (kernel 4) on q,k,v as in fl
                                                                   small => cfl -> 1.
    (nov_t, cfl_t) is the two-dimensional signal Proposition-separation says a single-matrix store
    cannot compute. Floor subtraction is NOT optional: without it the signal is swamped by
-   crosstalk mass (measured this session: separation collapses to ~1.3x; with it, 15.7x).
+   crosstalk mass (measured for this note: separation collapses to ~1.3x; with it, 15.7x).
 
 (3.4) THE DAN NET — a small LEARNED critic (A5). Crucially the CONTRIBUTION IS THE INPUT SET,
-      NOT THE FORM. (A hand-specified evidence gate was tested this session and collapsed to
+      NOT THE FORM. (A hand-specified evidence gate was tested for this note and collapsed to
       chance: beta = sigmoid(...-0.9 log(1+z)) drove recall to 0.044 because the gate latched
       shut. Hand-specified gates are the phase-1 H1b failure and are forbidden by construction.)
 
@@ -261,7 +261,7 @@ The surviving mechanism is the one that adds an input rather than a rule.
 
 2. A PROOF OF SEPARATION, NOT AN INTUITION. Any layer whose state is one matrix updated by S_t = A_t (*) S_{t-1} + k_t g_t^T with g_t a function of the token and of S_{t-1}^T k_t admits two histories with identical state, identical reads and identical gates at an address forever after, which the evidence channel separates. This covers DeltaNet, Gated DeltaNet, KDA, GDN-2, Titans, ATLAS, MesaNet and every learned-gate variant of them. This matters methodologically more than technically: phases 1 and 2 both proposed fixed RULES, which lie inside a learned gate's hypothesis class, so a learned gate contained them as a special case and beat them (H1b: -2.6 seed-SD). ATTEST proposes a new INPUT that is provably outside that class. The generalisable lesson — DO NOT PROPOSE A GATE, PROPOSE A STATE — is itself a contribution of this design.
 
-3. MEASURED, NOT ASSERTED (this session, sparse 32-of-2048 address, 96 keys, 96 interfering writes). Three address classes and their signals: by |error| (all a GDN/Titans gate sees) novel 12.98 / clean 5.82 / contradicted 6.19; by crosstalk-corrected evidence novel 6.48 / clean 43.51 / contradicted 101.78. Novel-vs-contradicted AUROC: 0.000 by error (ordered exactly backwards), 1.000 by evidence. Clean-vs-contradicted AUROC 0.955 by evidence, ~0.5 by error. The gap is not marginal.
+3. MEASURED, NOT ASSERTED (for this note, sparse 32-of-2048 address, 96 keys, 96 interfering writes). Three address classes and their signals: by |error| (all a GDN/Titans gate sees) novel 12.98 / clean 5.82 / contradicted 6.19; by crosstalk-corrected evidence novel 6.48 / clean 43.51 / contradicted 101.78. Novel-vs-contradicted AUROC: 0.000 by error (ordered exactly backwards), 1.000 by evidence. Clean-vs-contradicted AUROC 0.955 by evidence, ~0.5 by error. The gap is not marginal.
 
 4. THE CROSSTALK FLOOR AS AN ARCHITECTURAL REQUIREMENT. A monotone accumulator's read is dominated by interference mass, so the raw signal is nearly useless (measured 1.3x separation). Subtracting rho*sigma, with sigma the accumulator's own L1 mass kept in O(1), restores it (15.7x). This is the APL/antennal-lobe normalisation (A9) doing real work, plus the Fairhall rule (transmit the normaliser) — and it is a cheap, specific, non-obvious implementation requirement that would sink a naive attempt.
 
@@ -372,11 +372,11 @@ PRE-REGISTERED THRESHOLDS:
                  line-by-line against its spec; this keeps that standard.)
 
 WHY THIS IS THE RIGHT FALSIFIER, AND WHAT IT ALREADY SURVIVED. The separation proposition
-guarantees the SIGNAL exists and cannot be computed by A2; this session measured it at AUROC 1.000
+guarantees the SIGNAL exists and cannot be computed by A2; a measurement for this note put it at AUROC 1.000
 (novel vs contradicted) and 0.955 (clean vs contradicted) against 0.000 and ~0.5 for |error|. What
 K0 tests is the only thing still open: whether a gate that can SEE that signal converts it into
 recall. That is exactly where phases 1 and 2 died, so it is where the money should be spent first.
-A related caution is already banked: a HAND-SPECIFIED evidence gate was measured this session and
+A related caution is already banked: a HAND-SPECIFIED evidence gate was measured for this note and
 collapsed to chance (recall 0.044 vs 0.82 for the best fixed rate) because the gate latched shut —
 so every arm in K0 uses a learned gate, and any future hand-specified functional form is barred.
 
@@ -447,7 +447,7 @@ prefer this design over a larger one.
 
 ### Risks
 
-- MODAL FAILURE — the learned gate may not need the signal. The evidence channel provably EXISTS and is provably unavailable to the control (AUROC 1.000 vs 0.000 measured this session), but that does not mean backpropagation can convert it into recall. A learned gate on the instantaneous error is a strong control and has already beaten a fly-derived gate once in this repo (H1b, -2.6 seed-SD). This is exactly what rung 0 buys for 6 CPU-hours, and it is where I would put most of the probability mass of failure. Estimated P(rung 0 passes) ~ 0.55.
+- MODAL FAILURE — the learned gate may not need the signal. The evidence channel provably EXISTS and is provably unavailable to the control (AUROC 1.000 vs 0.000 measured for this note), but that does not mean backpropagation can convert it into recall. A learned gate on the instantaneous error is a strong control and has already beaten a fly-derived gate once in this repo (H1b, -2.6 seed-SD). This is exactly what rung 0 buys for 6 CPU-hours, and it is where I would put most of the probability mass of failure. Estimated P(rung 0 passes) ~ 0.55.
 - TRANSFER FAILURE — contradiction may be rare in natural text. The regime is defined by addresses being written more than once, inconsistently. MQAR-N constructs that; FineWeb-Edu at 2k context may not contain enough of it for the mechanism to pay, in which case rung 2 returns a null even though rung 0 and 1 passed. Mitigation: pre-register the boundary as the finding, and measure the contradiction rate in the corpus so the null is interpretable rather than mysterious. Estimated P(rung 0 passes AND rung 2 passes) ~ 0.25.
 - HYPERPARAMETER FRAGILITY — the evidence decay constant tau^Z is the sharpest knob in the design. Too fast and the evidence read is just a recency signal the model already has from its own decay; too slow and every address looks attested and the signal saturates. If the win exists only at one setting of tau^Z and d_z, it is a tuning artefact. Rung 1's robustness requirement (one setting must work across all three P values) is designed to catch this, and it may well kill the design.
 - FLOOR ESTIMATION UNDER LEARNED KEYS. The crosstalk floor rho*sigma assumes near-isotropic addresses; language-model keys are strongly anisotropic and correlated. With a badly estimated floor the separation collapses (measured: 15.7x with the floor, 1.3x without). Learning rho helps but may not be enough. The known analogue is the reported hard failure of fixed sparse hashing on un-whitened LM states at ~100k keys. Mitigation: whitening/decorrelation before the memory, and a floor ablation that is pre-registered as a possible cause of a null.
@@ -669,7 +669,7 @@ With n = 16384, C = 64, k = 32: |U| <= 2048 = n/8. The inner kernel is then
 exactly flash-linear-attention's chunk_gated_delta_rule, unmodified. Decay of
 untouched rows is handled by per-row last-touch timestamps (ell, already kept
 for the spacing gate) with a per-chunk renormalisation to avoid underflow of
-alpha^Delta. Verified available in this environment: torch 2.14.0+cu130,
+alpha^Delta. Available on the development machine: torch 2.14.0+cu130,
 triton 3.8.0. Install flash-linear-attention for the control arms.
 Total engineering: one gather/scatter wrapper, one servo, one gate stack.
 Estimated 8-12 weeks for one engineer including the evaluation harness.

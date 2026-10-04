@@ -1,4 +1,5 @@
-import numpy as np, torch
+import numpy as np
+import pytest, torch
 from flyai.tasks import nonstationary_mqar, retention_batch, TopicSwitchStream, same_index_logits
 from flyai.model import FlyAI, FlyAIConfig
 
@@ -14,7 +15,11 @@ def test_retention_batch():
 
 
 def test_topic_switch_stream():
-    s = TopicSwitchStream(); rng = np.random.default_rng(0); x, y, sw = s.batch("train", 2, 128, rng)
+    try:
+        s = TopicSwitchStream()
+    except FileNotFoundError:
+        pytest.skip("needs data/text/tinyshakespeare.txt (scripts/fetch_data.sh)")
+    rng = np.random.default_rng(0); x, y, sw = s.batch("train", 2, 128, rng)
     assert x.shape == (2, 128) and sw.any() and x.max() < s.vocab
 
 

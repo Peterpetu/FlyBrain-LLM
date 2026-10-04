@@ -33,7 +33,7 @@ is kept by the author (docs/history/README.md).
 - Infrastructure: hash-locked pre-registrations that refuse to run after an edit, per-run claims
   for a shared GPU, graceful STOP files, seeded per-step batches from worker processes, a
   code-identity check across a grid's runs (`scripts/export_runs.py`), data checksums and
-  manifests, a reproduction manual (docs/phase3/GPU_RUNBOOK.md), 129 unit tests.
+  manifests, a reproduction manual (docs/phase3/GPU_RUNBOOK.md), 124 unit tests.
 - Publication: the first published release. docs/history/README.md records, from the development
   history, when each pre-registration was frozen relative to its results, and the code-identity
   checks of the GPU grids made before publication.
