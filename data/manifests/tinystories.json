@@ -1,0 +1,17 @@
+{
+ "source": "roneneldan/TinyStories",
+ "tokenizer": "gpt2 (BPE, 50,257 tokens)",
+ "separator": "end-of-text token after every story",
+ "splits": {
+  "validation": {
+   "tokens": 2045560,
+   "stories": 10000,
+   "bin_sha256": "06469ed7600079ad4c93077d0115f3b8b731317b7c1c7308ee12403125c615c1"
+  },
+  "train": {
+   "tokens": 100085796,
+   "stories": 446000,
+   "bin_sha256": "21c12f2d33e1d574e836924e5b06c679269ba07b588e123a1d3b206b8c2a3e9e"
+  }
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "size": "125m",
+ "mixer": "flyai",
+ "block": {
+  "memory_gate": "precision",
+  "arousal": "both",
+  "regulate_core": true,
+  "n_kc": 2048,
+  "n_pn": 64,
+  "active_frac": 0.05,
+  "inh_frac": 0.308,
+  "core_fan_in": 32,
+  "n_rings": 8,
+  "n_ring_units": 8,
+  "fusion": "closed",
+  "n_groups": 12,
+  "fan_in": 8,
+  "chunk": 64,
+  "delayed_write": false
+ },
+ "train": {
+  "tokens": 2500000000.0,
+  "seq": 2048,
+  "batch": 32,
+  "lr": 0.003,
+  "warmup": 1000,
+  "wd": 0.1,
+  "bf16": true,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "lr_sweep": {
+   "flyai": [
+    0.002,
+    0.003,
+    0.004
+   ],
+   "gdn": [
+    0.001,
+    0.002,
+    0.004
+   ]
+  }
+ },
+ "controls": {
+  "gdn": {
+   "mixer": "gdn"
+  },
+  "no_precision": {
+   "block": {
+    "memory_gate": "learned"
+   }
+  },
+  "no_regulation": {
+   "block": {
+    "regulate_core": false
+   }
+  },
+  "attention": {
+   "mixer": "attention"
+  },
+  "learned_gate_fusion": {
+   "block": {
+    "fusion": "learned"
+   }
+  },
+  "loop_fusion_K2": {
+   "block": {
+    "fusion": "loop",
+    "K_max": 2
+   }
+  },
+  "delayed_write_C64": {
+   "block": {
+    "delayed_write": true,
+    "chunk": 64
+   }
+  },
+  "no_attractor": {
+   "block": {
+    "use_attractor": false
+   }
+  },
+  "no_memory": {
+   "block": {
+    "use_memory": false
+   }
+  },
+  "surprise_gate": {
+   "block": {
+    "memory_gate": "surprise"
+   }
+  },
+  "const_gate": {
+   "block": {
+    "memory_gate": "const"
+   }
+  },
+  "scalar_precision": {
+   "block": {
+    "n_groups": 1
+   }
+  },
+  "lyapunov_target_-0.10": {
+   "block": {
+    "target_lambda": -0.1
+   }
+  },
+  "lyapunov_target_0.00": {
+   "block": {
+    "target_lambda": 0.0
+   }
+  },
+  "chunk_C32": {
+   "block": {
+    "chunk": 32
+   }
+  },
+  "chunk_C128": {
+   "block": {
+    "chunk": 128
+   }
+  },
+  "per_head_codes": {
+   "block": {
+    "shared_code": false
+   }
+  },
+  "active_frac_15": {
+   "block": {
+    "active_frac": 0.15
+   }
+  },
+  "no_arousal": {
+   "block": {
+    "arousal": "none"
+   }
+  },
+  "gamma_pi3": {
+   "block": {
+    "pi3_source": "gamma"
+   }
+  }
+ }
+}

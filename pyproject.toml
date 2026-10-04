@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flybrain"
+version = "0.3.0"
+description = "Does the Drosophila connectome contain computational principles that improve sequence models? A controlled research programme."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "torch>=2.1",
+    "pandas>=2.0",
+    "pyarrow>=14",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "matplotlib", "networkx"]
+bench = ["lm_eval>=0.4", "datasets", "transformers"]
+
+[tool.setuptools.packages.find]
+include = ["flybrain*", "flyai*", "flyprinc*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

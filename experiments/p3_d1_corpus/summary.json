@@ -1,0 +1,434 @@
+{
+ "wikitext2.train.txt|cap|W512": {
+  "corpus": "wikitext2.train.txt",
+  "stratum": "cap",
+  "W": 512,
+  "n_tokens": 2051910,
+  "n_key_types": 9545,
+  "keys_per_1k": 92.5050318971105,
+  "repeats_per_1k": 52.11290943559903,
+  "consistent_fraction": 0.2478607700292712,
+  "persistent_per_1k": 3.280358300315316,
+  "persistent_far_per_1k": 0.0,
+  "gap_median": 59.0,
+  "gap_p90": 295.0,
+  "observed": {
+   "repeats": 106931,
+   "consistent": 26504,
+   "rebind": 80427,
+   "persistent": 6731,
+   "persistent_far": 0,
+   "gap_median": 59.0,
+   "gap_p90": 295.0
+  },
+  "null": {
+   "persistent": {
+    "mean": 5107.65,
+    "sd": 42.27388767250262
+   },
+   "persistent_far": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "consistent": {
+    "mean": 14025.4,
+    "sd": 75.54252897679906
+   }
+  },
+  "z": {
+   "persistent": 38.40077384356398,
+   "persistent_far": 0.0,
+   "consistent": 165.18642106663492
+  },
+  "ratio": {
+   "persistent": 1.3178271807974313,
+   "persistent_far": 0.0,
+   "consistent": 1.8897143753475838
+  }
+ },
+ "wikitext2.train.txt|cap|W2048": {
+  "corpus": "wikitext2.train.txt",
+  "stratum": "cap",
+  "W": 2048,
+  "n_tokens": 2051910,
+  "n_key_types": 9545,
+  "keys_per_1k": 92.5050318971105,
+  "repeats_per_1k": 63.23571696614374,
+  "consistent_fraction": 0.2583118824853184,
+  "persistent_per_1k": 4.434405017763937,
+  "persistent_far_per_1k": 0.7739130858565921,
+  "gap_median": 91.0,
+  "gap_p90": 861.0,
+  "observed": {
+   "repeats": 129754,
+   "consistent": 33517,
+   "rebind": 96237,
+   "persistent": 9099,
+   "persistent_far": 1588,
+   "gap_median": 91.0,
+   "gap_p90": 861.0
+  },
+  "null": {
+   "persistent": {
+    "mean": 6767.25,
+    "sd": 49.75505792855319
+   },
+   "persistent_far": {
+    "mean": 982.9,
+    "sd": 30.457736032255035
+   },
+   "consistent": {
+    "mean": 17503.15,
+    "sd": 89.09916119872167
+   }
+  },
+  "z": {
+   "persistent": 46.864582156618624,
+   "persistent_far": 19.866873866107227,
+   "consistent": 179.73064824127383
+  },
+  "ratio": {
+   "persistent": 1.3445638922752965,
+   "persistent_far": 1.6156272255570252,
+   "consistent": 1.914912458614592
+  }
+ },
+ "wikitext2.train.txt|cap|W8192": {
+  "corpus": "wikitext2.train.txt",
+  "stratum": "cap",
+  "W": 8192,
+  "n_tokens": 2051910,
+  "n_key_types": 9545,
+  "keys_per_1k": 92.5050318971105,
+  "repeats_per_1k": 69.6302469406553,
+  "consistent_fraction": 0.25494313210848646,
+  "persistent_per_1k": 5.2614393418814664,
+  "persistent_far_per_1k": 1.4971416875009138,
+  "gap_median": 130.0,
+  "gap_p90": 2631.5,
+  "observed": {
+   "repeats": 142875,
+   "consistent": 36425,
+   "rebind": 106450,
+   "persistent": 10796,
+   "persistent_far": 3072,
+   "gap_median": 130.0,
+   "gap_p90": 2631.5
+  },
+  "null": {
+   "persistent": {
+    "mean": 7650.1,
+    "sd": 57.89091374936867
+   },
+   "persistent_far": {
+    "mean": 1617.25,
+    "sd": 36.94074202087218
+   },
+   "consistent": {
+    "mean": 19260.55,
+    "sd": 97.92342604515557
+   }
+  },
+  "z": {
+   "persistent": 54.3418612050204,
+   "persistent_far": 39.38063829844133,
+   "consistent": 175.28441041355043
+  },
+  "ratio": {
+   "persistent": 1.4112233827008798,
+   "persistent_far": 1.8995207914669965,
+   "consistent": 1.8911713320751484
+  }
+ },
+ "wikitext2.train.txt|rare|W512": {
+  "corpus": "wikitext2.train.txt",
+  "stratum": "rare",
+  "W": 512,
+  "n_tokens": 2051910,
+  "n_key_types": 29594,
+  "keys_per_1k": 210.23972786330785,
+  "repeats_per_1k": 66.16469533264129,
+  "consistent_fraction": 0.24767243157243451,
+  "persistent_per_1k": 3.4572666442485294,
+  "persistent_far_per_1k": 0.0,
+  "gap_median": 66.0,
+  "gap_p90": 324.0,
+  "observed": {
+   "repeats": 135764,
+   "consistent": 33625,
+   "rebind": 102139,
+   "persistent": 7094,
+   "persistent_far": 0,
+   "gap_median": 66.0,
+   "gap_p90": 324.0
+  },
+  "null": {
+   "persistent": {
+    "mean": 5896.3,
+    "sd": 41.55161660038347
+   },
+   "persistent_far": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "consistent": {
+    "mean": 18759.25,
+    "sd": 109.53195880655107
+   }
+  },
+  "z": {
+   "persistent": 28.824389951387513,
+   "persistent_far": 0.0,
+   "consistent": 135.72066237083385
+  },
+  "ratio": {
+   "persistent": 1.2031273849702355,
+   "persistent_far": 0.0,
+   "consistent": 1.7924490584644908
+  }
+ },
+ "wikitext2.train.txt|rare|W2048": {
+  "corpus": "wikitext2.train.txt",
+  "stratum": "rare",
+  "W": 2048,
+  "n_tokens": 2051910,
+  "n_key_types": 29594,
+  "keys_per_1k": 210.23972786330785,
+  "repeats_per_1k": 87.16610377648142,
+  "consistent_fraction": 0.25334205538502824,
+  "persistent_per_1k": 5.066499017988118,
+  "persistent_far_per_1k": 1.065836220886881,
+  "gap_median": 116.0,
+  "gap_p90": 1015.0,
+  "observed": {
+   "repeats": 178857,
+   "consistent": 45312,
+   "rebind": 133545,
+   "persistent": 10396,
+   "persistent_far": 2187,
+   "gap_median": 116.0,
+   "gap_p90": 1015.0
+  },
+  "null": {
+   "persistent": {
+    "mean": 8558.25,
+    "sd": 63.40170593753353
+   },
+   "persistent_far": {
+    "mean": 1602.25,
+    "sd": 36.01589561349412
+   },
+   "consistent": {
+    "mean": 24674.75,
+    "sd": 129.52255442687638
+   }
+  },
+  "z": {
+   "persistent": 28.985813123240586,
+   "persistent_far": 16.235886683903843,
+   "consistent": 159.3332535118509
+  },
+  "ratio": {
+   "persistent": 1.2147343206847194,
+   "persistent_far": 1.3649555312841317,
+   "consistent": 1.8363711891711163
+  }
+ },
+ "wikitext2.train.txt|rare|W8192": {
+  "corpus": "wikitext2.train.txt",
+  "stratum": "rare",
+  "W": 8192,
+  "n_tokens": 2051910,
+  "n_key_types": 29594,
+  "keys_per_1k": 210.23972786330785,
+  "repeats_per_1k": 101.78857747172147,
+  "consistent_fraction": 0.24557959599925308,
+  "persistent_per_1k": 6.1489051664059335,
+  "persistent_far_per_1k": 1.9703593237520163,
+  "gap_median": 179.0,
+  "gap_p90": 2747.0,
+  "observed": {
+   "repeats": 208861,
+   "consistent": 51292,
+   "rebind": 157569,
+   "persistent": 12617,
+   "persistent_far": 4043,
+   "gap_median": 179.0,
+   "gap_p90": 2747.0
+  },
+  "null": {
+   "persistent": {
+    "mean": 10104.0,
+    "sd": 79.54541900204265
+   },
+   "persistent_far": {
+    "mean": 2741.55,
+    "sd": 54.320176536415715
+   },
+   "consistent": {
+    "mean": 28543.9,
+    "sd": 139.23282280902166
+   }
+  },
+  "z": {
+   "persistent": 31.59201411630591,
+   "persistent_far": 23.958869116110485,
+   "consistent": 163.3817338545407
+  },
+  "ratio": {
+   "persistent": 1.2487133808392716,
+   "persistent_far": 1.474713209680655,
+   "consistent": 1.7969513626379015
+  }
+ },
+ "ptb.train.txt|rare|W512": {
+  "corpus": "ptb.train.txt",
+  "stratum": "rare",
+  "W": 512,
+  "n_tokens": 887521,
+  "n_key_types": 8407,
+  "keys_per_1k": 199.92315674784035,
+  "repeats_per_1k": 49.24841215024772,
+  "consistent_fraction": 0.18167883044681873,
+  "persistent_per_1k": 1.8005207764097977,
+  "persistent_far_per_1k": 0.0,
+  "gap_median": 47.5,
+  "gap_p90": 227.29999999999995,
+  "observed": {
+   "repeats": 43709,
+   "consistent": 7941,
+   "rebind": 35768,
+   "persistent": 1598,
+   "persistent_far": 0,
+   "gap_median": 47.5,
+   "gap_p90": 227.29999999999995
+  },
+  "null": {
+   "persistent": {
+    "mean": 1314.5,
+    "sd": 29.162881959959417
+   },
+   "persistent_far": {
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "consistent": {
+    "mean": 4355.15,
+    "sd": 66.14996916894695
+   }
+  },
+  "z": {
+   "persistent": 9.721261444230546,
+   "persistent_far": 0.0,
+   "consistent": 54.20788618724437
+  },
+  "ratio": {
+   "persistent": 1.215671357930772,
+   "persistent_far": 0.0,
+   "consistent": 1.8233585525182832
+  }
+ },
+ "ptb.train.txt|rare|W2048": {
+  "corpus": "ptb.train.txt",
+  "stratum": "rare",
+  "W": 2048,
+  "n_tokens": 887521,
+  "n_key_types": 8407,
+  "keys_per_1k": 199.92315674784035,
+  "repeats_per_1k": 59.89604753014295,
+  "consistent_fraction": 0.17378054515698188,
+  "persistent_per_1k": 2.198257844039747,
+  "persistent_far_per_1k": 0.28168347565860413,
+  "gap_median": 63.0,
+  "gap_p90": 698.0,
+  "observed": {
+   "repeats": 53159,
+   "consistent": 9238,
+   "rebind": 43921,
+   "persistent": 1951,
+   "persistent_far": 250,
+   "gap_median": 63.0,
+   "gap_p90": 698.0
+  },
+  "null": {
+   "persistent": {
+    "mean": 1546.65,
+    "sd": 30.778110813744853
+   },
+   "persistent_far": {
+    "mean": 134.75,
+    "sd": 11.322427673474122
+   },
+   "consistent": {
+    "mean": 5357.2,
+    "sd": 75.496671240665
+   }
+  },
+  "z": {
+   "persistent": 13.13758347440304,
+   "persistent_far": 10.178912449138853,
+   "consistent": 51.40359086335019
+  },
+  "ratio": {
+   "persistent": 1.261436006853522,
+   "persistent_far": 1.8552875695732838,
+   "consistent": 1.7244082729784216
+  }
+ },
+ "ptb.train.txt|rare|W8192": {
+  "corpus": "ptb.train.txt",
+  "stratum": "rare",
+  "W": 8192,
+  "n_tokens": 887521,
+  "n_key_types": 8407,
+  "keys_per_1k": 199.92315674784035,
+  "repeats_per_1k": 85.0470017047484,
+  "consistent_fraction": 0.1553371047018455,
+  "persistent_per_1k": 3.42865126571653,
+  "persistent_far_per_1k": 1.414051047806193,
+  "gap_median": 193.0,
+  "gap_p90": 5864.800000000002,
+  "observed": {
+   "repeats": 75481,
+   "consistent": 11725,
+   "rebind": 63756,
+   "persistent": 3043,
+   "persistent_far": 1255,
+   "gap_median": 193.0,
+   "gap_p90": 5864.800000000002
+  },
+  "null": {
+   "persistent": {
+    "mean": 2392.4,
+    "sd": 29.725764121912473
+   },
+   "persistent_far": {
+    "mean": 795.1,
+    "sd": 21.63792966066763
+   },
+   "consistent": {
+    "mean": 7797.5,
+    "sd": 77.9598412139562
+   }
+  },
+  "z": {
+   "persistent": 21.88673762369013,
+   "persistent_far": 21.254343978942853,
+   "consistent": 50.378501788134834
+  },
+  "ratio": {
+   "persistent": 1.2719444908878113,
+   "persistent_far": 1.5784178090806187,
+   "consistent": 1.5036870791920487
+  }
+ },
+ "verdict": {
+  "rule": "far persistent re-bindings > 1 per 2048 tokens at W=8192 AND persistent count exceeds the permutation null by z > 3",
+  "passes_in": [
+   "wikitext2.train.txt|cap|W8192",
+   "wikitext2.train.txt|rare|W8192",
+   "ptb.train.txt|rare|W8192"
+  ],
+  "language_rung_in_scope": true
+ }
+}

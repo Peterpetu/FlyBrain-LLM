@@ -1,0 +1,133 @@
+{
+ "wikitext2.train.txt|W512": {
+  "keys": {
+   "keys_per_1k": 356.8431363948711,
+   "repeats_per_1k": 131.42048140512986,
+   "rebind_fraction": 0.9242869804162974,
+   "rebind_per_1k": 121.47023992280364,
+   "rebind_far_per_1k": 0.0,
+   "rebind_gap_median": 70.0,
+   "rebind_gap_p90": 337.0
+  },
+  "control": {
+   "keys_per_1k": 20.40976456082382,
+   "repeats_per_1k": 5.593325243309892,
+   "rebind_fraction": 0.9423194214515989,
+   "rebind_per_1k": 5.270699007266401,
+   "rebind_far_per_1k": 0.0,
+   "rebind_gap_median": 114.0,
+   "rebind_gap_p90": 392.0
+  },
+  "n_tokens": 2051910
+ },
+ "wikitext2.train.txt|W2048": {
+  "keys": {
+   "keys_per_1k": 356.8431363948711,
+   "repeats_per_1k": 173.41842478471278,
+   "rebind_fraction": 0.9220237242123545,
+   "rebind_per_1k": 159.89590186704098,
+   "rebind_far_per_1k": 38.425661944237326,
+   "rebind_gap_median": 127.0,
+   "rebind_gap_p90": 1119.0
+  },
+  "control": {
+   "keys_per_1k": 20.40976456082382,
+   "repeats_per_1k": 9.207518848292567,
+   "rebind_fraction": 0.9491346001164452,
+   "rebind_per_1k": 8.739174720138799,
+   "rebind_far_per_1k": 3.4684757128723973,
+   "rebind_gap_median": 322.0,
+   "rebind_gap_p90": 1482.0
+  },
+  "n_tokens": 2051910
+ },
+ "wikitext2.train.txt|W8192": {
+  "keys": {
+   "keys_per_1k": 356.8431363948711,
+   "repeats_per_1k": 207.39018767879685,
+   "rebind_fraction": 0.9276059462431794,
+   "rebind_per_1k": 192.3763712833409,
+   "rebind_far_per_1k": 70.90613136053726,
+   "rebind_gap_median": 217.0,
+   "rebind_gap_p90": 3545.0
+  },
+  "control": {
+   "keys_per_1k": 20.40976456082382,
+   "repeats_per_1k": 13.332456101875815,
+   "rebind_fraction": 0.9583653178345579,
+   "rebind_per_1k": 12.777363529589506,
+   "rebind_far_per_1k": 7.5066645223231045,
+   "rebind_gap_median": 824.0,
+   "rebind_gap_p90": 5468.0
+  },
+  "n_tokens": 2051910
+ },
+ "ptb.train.txt|W512": {
+  "keys": {
+   "keys_per_1k": 233.75559564224397,
+   "repeats_per_1k": 84.99742541303249,
+   "rebind_fraction": 0.9668995320598646,
+   "rebind_per_1k": 82.18397085815434,
+   "rebind_far_per_1k": 0.0,
+   "rebind_gap_median": 28.0,
+   "rebind_gap_p90": 209.0
+  },
+  "control": {
+   "keys_per_1k": 0.0,
+   "repeats_per_1k": 0.0,
+   "rebind_fraction": 0.0,
+   "rebind_per_1k": 0.0,
+   "rebind_far_per_1k": 0.0,
+   "rebind_gap_median": NaN,
+   "rebind_gap_p90": NaN
+  },
+  "n_tokens": 887521
+ },
+ "ptb.train.txt|W2048": {
+  "keys": {
+   "keys_per_1k": 233.75559564224397,
+   "repeats_per_1k": 94.98028779037341,
+   "rebind_fraction": 0.9675789173991957,
+   "rebind_per_1k": 91.90092403447356,
+   "rebind_far_per_1k": 9.716953176319208,
+   "rebind_gap_median": 35.0,
+   "rebind_gap_p90": 550.0
+  },
+  "control": {
+   "keys_per_1k": 0.0,
+   "repeats_per_1k": 0.0,
+   "rebind_fraction": 0.0,
+   "rebind_per_1k": 0.0,
+   "rebind_far_per_1k": 0.0,
+   "rebind_gap_median": NaN,
+   "rebind_gap_p90": NaN
+  },
+  "n_tokens": 887521
+ },
+ "ptb.train.txt|W8192": {
+  "keys": {
+   "keys_per_1k": 233.75559564224397,
+   "repeats_per_1k": 118.02537630095514,
+   "rebind_fraction": 0.9701575178997613,
+   "rebind_per_1k": 114.50320612131995,
+   "rebind_far_per_1k": 32.3192352631656,
+   "rebind_gap_median": 64.0,
+   "rebind_gap_p90": 4850.0
+  },
+  "control": {
+   "keys_per_1k": 0.0,
+   "repeats_per_1k": 0.0,
+   "rebind_fraction": 0.0,
+   "rebind_per_1k": 0.0,
+   "rebind_far_per_1k": 0.0,
+   "rebind_gap_median": NaN,
+   "rebind_gap_p90": NaN
+  },
+  "n_tokens": 887521
+ },
+ "verdict": {
+  "rebind_far_gt_1_per_2048_at_W8192": true,
+  "rebind_fraction_exceeds_control_by_5pts": true,
+  "language_rung_in_scope": true
+ }
+}

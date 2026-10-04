@@ -1,0 +1,41 @@
+{
+ "size": "tiny",
+ "mixer": "flyai",
+ "block": {
+  "n_kc": 128,
+  "n_pn": 16,
+  "d_v": 8,
+  "n_rings": 2,
+  "n_ring_units": 8,
+  "chunk": 8,
+  "delayed_write": true,
+  "arousal": "both"
+ },
+ "train": {
+  "tokens": 4096,
+  "seq": 32,
+  "batch": 4,
+  "grad_accum": 1,
+  "lr": 0.003,
+  "warmup": 2,
+  "wd": 0.1,
+  "bf16": false,
+  "compile": false,
+  "seeds": [
+   0
+  ]
+ },
+ "controls": {
+  "gdn": {
+   "mixer": "gdn"
+  },
+  "no_precision": {
+   "block": {
+    "memory_gate": "learned"
+   }
+  },
+  "attention": {
+   "mixer": "attention"
+  }
+ }
+}

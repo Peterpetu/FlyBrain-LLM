@@ -1,0 +1,21 @@
+# large raw data: fetched by scripts/fetch_data.sh, never committed
+data/malecns/
+data/text/
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/
+*.egg-info/
+build/
+dist/
+.venv/
+runs_*/
+
+# graceful-stop control files for running grids (flybrain/harness/runner.py)
+experiments/*/STOP
+
+# logs of detached jobs (scripts/launch_detached.ps1)
+logs/
+
+# model weights and checkpoints of prototype runs
+experiments/p3_s2_lm/prototype_runs/**/*.pt

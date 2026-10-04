@@ -1,0 +1,525 @@
+{
+ "mushroom_body_L": {
+  "stats": {
+   "side": "L",
+   "n_PN": 120,
+   "n_PN_types": 60,
+   "n_KC": 2019,
+   "n_APL": 1,
+   "n_DPM": 1,
+   "n_MBON": 48,
+   "n_PAM": 158,
+   "n_PPL1": 8,
+   "n_compartments_MBON": 32,
+   "frac_KC_with_PN_input": 0.9271916790490342,
+   "KC_fan_in_PN_neurons_mean": 5.297542735042735,
+   "KC_fan_in_PN_types_mean": 5.156517094017094,
+   "KC_fan_in_PN_types_median": 5.0,
+   "PN_fan_out_KC_mean": 82.64166666666667,
+   "PN_KC_contacts": 183709,
+   "PN_KC_edges": 9917,
+   "APL_covers_frac_KC": 1.0,
+   "KC_MBON_edges": 17931,
+   "MBON_fan_in_KC_mean": 373.5625,
+   "DAN_KC_edges": 7212,
+   "DAN_MBON_edges": 486,
+   "MBON_DAN_feedback_edges": 339,
+   "MBON_DAN_feedback_contacts": 2861,
+   "MBON_MBON_edges": 282,
+   "KC_KC_edges": 56963,
+   "APL_nt": [
+    "gaba"
+   ],
+   "DPM_nt": [
+    "dopamine"
+   ],
+   "MBON_nt_counts": {
+    "acetylcholine": 25,
+    "gaba": 10,
+    "glutamate": 13
+   },
+   "KC_types": {
+    "KC": 1,
+    "KCa'b'-ap1": 97,
+    "KCa'b'-ap2": 133,
+    "KCa'b'-m": 110,
+    "KCab-c": 277,
+    "KCab-m": 310,
+    "KCab-p": 64,
+    "KCab-s": 234,
+    "KCg": 1,
+    "KCg-d": 99,
+    "KCg-m": 689,
+    "KCg-s1": 1,
+    "KCg-s2": 1,
+    "KCg-s3": 1,
+    "KCg-s4": 1
+   },
+   "PN_nt_counts": {
+    "acetylcholine": 116,
+    "gaba": 2,
+    "glutamate": 2
+   },
+   "frac_KC_inhibitory_flag": 0.0
+  },
+  "verification": {
+   "KC_count_~2000_per_hemisphere": [
+    true,
+    2019
+   ],
+   "APL_single_neuron_GABA": [
+    true,
+    [
+     "gaba"
+    ]
+   ],
+   "APL_inhibits_>95%_KC": [
+    true,
+    1.0
+   ],
+   "KC_fan_in_PN_types_5-7_(Caron2013)": [
+    true,
+    5.156517094017094
+   ],
+   "MBON_~20-40_types_per_side": [
+    true,
+    48
+   ],
+   "MBON_DAN_feedback_exists": [
+    true,
+    339
+   ],
+   "DAN_target_MBON_dendrites_(compartment_coupling)": [
+    true,
+    486
+   ],
+   "PAM_>>PPL1_in_count": [
+    true,
+    [
+     158,
+     8
+    ]
+   ],
+   "KC_excitatory_(cholinergic)": [
+    true,
+    0.0
+   ]
+  }
+ },
+ "mushroom_body_R": {
+  "stats": {
+   "side": "R",
+   "n_PN": 119,
+   "n_PN_types": 61,
+   "n_KC": 2045,
+   "n_APL": 1,
+   "n_DPM": 1,
+   "n_MBON": 49,
+   "n_PAM": 158,
+   "n_PPL1": 8,
+   "n_compartments_MBON": 32,
+   "frac_KC_with_PN_input": 0.9251833740831296,
+   "KC_fan_in_PN_neurons_mean": 5.231501057082452,
+   "KC_fan_in_PN_types_mean": 5.06553911205074,
+   "KC_fan_in_PN_types_median": 5.0,
+   "PN_fan_out_KC_mean": 83.17647058823529,
+   "PN_KC_contacts": 189838,
+   "PN_KC_edges": 9898,
+   "APL_covers_frac_KC": 0.9995110024449878,
+   "KC_MBON_edges": 17985,
+   "MBON_fan_in_KC_mean": 367.0408163265306,
+   "DAN_KC_edges": 6177,
+   "DAN_MBON_edges": 478,
+   "MBON_DAN_feedback_edges": 300,
+   "MBON_DAN_feedback_contacts": 2605,
+   "MBON_MBON_edges": 255,
+   "KC_KC_edges": 60418,
+   "APL_nt": [
+    "gaba"
+   ],
+   "DPM_nt": [
+    "dopamine"
+   ],
+   "MBON_nt_counts": {
+    "acetylcholine": 25,
+    "gaba": 11,
+    "glutamate": 13
+   },
+   "KC_types": {
+    "KC": 1,
+    "KCa'b'-ap1": 102,
+    "KCa'b'-ap2": 158,
+    "KCa'b'-m": 95,
+    "KCab-c": 211,
+    "KCab-m": 226,
+    "KCab-p": 65,
+    "KCab-s": 423,
+    "KCg-d": 107,
+    "KCg-m": 653,
+    "KCg-s1": 1,
+    "KCg-s2": 1,
+    "KCg-s3": 1,
+    "KCg-s4": 1
+   },
+   "PN_nt_counts": {
+    "acetylcholine": 116,
+    "gaba": 3
+   },
+   "frac_KC_inhibitory_flag": 0.0
+  },
+  "verification": {
+   "KC_count_~2000_per_hemisphere": [
+    true,
+    2045
+   ],
+   "APL_single_neuron_GABA": [
+    true,
+    [
+     "gaba"
+    ]
+   ],
+   "APL_inhibits_>95%_KC": [
+    true,
+    0.9995110024449878
+   ],
+   "KC_fan_in_PN_types_5-7_(Caron2013)": [
+    true,
+    5.06553911205074
+   ],
+   "MBON_~20-40_types_per_side": [
+    true,
+    49
+   ],
+   "MBON_DAN_feedback_exists": [
+    true,
+    300
+   ],
+   "DAN_target_MBON_dendrites_(compartment_coupling)": [
+    true,
+    478
+   ],
+   "PAM_>>PPL1_in_count": [
+    true,
+    [
+     158,
+     8
+    ]
+   ],
+   "KC_excitatory_(cholinergic)": [
+    true,
+    0.0
+   ]
+  }
+ },
+ "central_complex": {
+  "stats": {
+   "EPG": 46,
+   "PEN_a": 20,
+   "PEN_b": 22,
+   "PEG": 18,
+   "Delta7": 42,
+   "EL": 18,
+   "ExR": 26,
+   "n_core": 148,
+   "edges_core": 7216,
+   "contacts_core": 136003,
+   "frac_with_angle": 1.0,
+   "nt": {
+    "EPG": {
+     "acetylcholine": 46
+    },
+    "PEN_a": {
+     "acetylcholine": 20
+    },
+    "PEN_b": {
+     "acetylcholine": 22
+    },
+    "PEG": {
+     "acetylcholine": 18
+    },
+    "Delta7": {
+     "glutamate": 42
+    }
+   }
+  },
+  "verification": {
+   "EPG_46_(hemibrain 46)": [
+    true,
+    46
+   ],
+   "PEN_42_(hemibrain 20 PEN_a + 22 PEN_b)": [
+    true,
+    [
+     20,
+     22
+    ]
+   ],
+   "Delta7_42_(hemibrain 42)": [
+    true,
+    42
+   ],
+   "PEG_18_(hemibrain 18)": [
+    true,
+    18
+   ],
+   "EPG_cholinergic": [
+    true,
+    null
+   ],
+   "Delta7_glutamatergic_(inhibitory)": [
+    true,
+    null
+   ],
+   "EPG->EPG_peaks_at_offset0": [
+    true,
+    [
+     27.7,
+     6.6,
+     0.2,
+     0.0,
+     0.1,
+     0.0,
+     0.1,
+     6.7
+    ]
+   ],
+   "PEN_output_vs_input_shift_opposite_sign_per_side": [
+    true,
+    {
+     "L": -7.293401147690235,
+     "R": 6.892066636989686
+    }
+   ],
+   "EPG->Delta7_input_peaks_opposite_(offset4)": [
+    true,
+    [
+     1.1,
+     1.8,
+     9.5,
+     18.8,
+     21.0,
+     17.4,
+     8.6,
+     1.7
+    ]
+   ],
+   "Delta7_output_local_(offset0_max)": [
+    true,
+    [
+     13.5,
+     2.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     1.4
+    ]
+   ],
+   "effective_EPG->D7->EPG_inhibition_min_at_0_max_opposite": [
+    true,
+    [
+     117.0,
+     176.0,
+     816.0,
+     1625.0,
+     1873.0,
+     1592.0,
+     834.0,
+     185.0
+    ]
+   ],
+   "PEN_L_and_PEN_R_shift_bump_opposite_ways": [
+    true,
+    {
+     "L": [
+      9.4,
+      0.4,
+      0.0,
+      0.0,
+      0.1,
+      8.1,
+      92.7,
+      93.0
+     ],
+     "R": [
+      7.3,
+      95.7,
+      88.0,
+      7.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  "profiles": {
+   "EPG->EPG": [
+    27.74436090225564,
+    6.6022727272727275,
+    0.1856060606060606,
+    0.022641509433962263,
+    0.12878787878787878,
+    0.011320754716981131,
+    0.12878787878787878,
+    6.6856060606060606
+   ],
+   "EPG->PEN_a": [
+    7.568965517241379,
+    10.982608695652173,
+    10.904347826086957,
+    0.8434782608695652,
+    0.0,
+    0.4260869565217391,
+    10.660869565217391,
+    10.965217391304348
+   ],
+   "EPG->PEN_b": [
+    5.65625,
+    11.626984126984127,
+    9.76984126984127,
+    0.0,
+    0.0,
+    0.0,
+    9.984126984126984,
+    11.976190476190476
+   ],
+   "PEN_a->EPG": [
+    7.482758620689655,
+    27.817391304347826,
+    26.704347826086956,
+    3.226086956521739,
+    0.043859649122807015,
+    3.8086956521739133,
+    27.843478260869563,
+    27.63478260869565
+   ],
+   "PEN_b->EPG": [
+    0.8671875,
+    20.76984126984127,
+    16.8015873015873,
+    0.28346456692913385,
+    0.0,
+    0.2677165354330709,
+    17.976190476190474,
+    19.428571428571427
+   ],
+   "EPG->Delta7": [
+    1.0950413223140496,
+    1.8177777777777777,
+    9.54655870445344,
+    18.76595744680851,
+    21.023255813953487,
+    17.42798353909465,
+    8.5990990990991,
+    1.676923076923077
+   ],
+   "Delta7->EPG": [
+    13.487704918032787,
+    1.9910714285714286,
+    0.0,
+    0.0,
+    0.10852713178294573,
+    0.0,
+    0.0,
+    1.3682170542635659
+   ],
+   "Delta7->PEN_a": [
+    8.38888888888889,
+    1.0918367346938775,
+    0.0,
+    0.0,
+    0.07272727272727272,
+    0.0,
+    0.0,
+    0.75
+   ],
+   "Delta7->Delta7": [
+    15.82819383259912,
+    9.637305699481866,
+    13.319148936170214,
+    18.70731707317073,
+    19.69918699186992,
+    18.201793721973093,
+    13.808510638297872,
+    10.510121457489879
+   ],
+   "EPG->PEG": [
+    42.76923076923077,
+    4.223300970873787,
+    2.2233009708737863,
+    0.17307692307692307,
+    2.2788461538461537,
+    0.14423076923076922,
+    2.4757281553398056,
+    3.3398058252427183
+   ],
+   "PEG->EPG": [
+    4.413461538461538,
+    0.7281553398058253,
+    0.46601941747572817,
+    0.028846153846153848,
+    0.5769230769230769,
+    0.0,
+    0.6213592233009708,
+    0.7864077669902912
+   ],
+   "PEN_a[L]->EPG": [
+    8.431034482758621,
+    0.3508771929824561,
+    0.0,
+    0.0,
+    0.08771929824561403,
+    7.551724137931035,
+    56.175438596491226,
+    54.793103448275865
+   ],
+   "PEN_a[R]->EPG": [
+    6.5344827586206895,
+    54.810344827586206,
+    53.87719298245614,
+    6.396551724137931,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "PEN_b[L]->EPG": [
+    0.9375,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.53125,
+    36.53225806451613,
+    38.25
+   ],
+   "PEN_b[R]->EPG": [
+    0.796875,
+    40.890625,
+    34.145161290322584,
+    0.5625,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "EPG->Delta7->EPG (effective inhibition)": [
+    116.65037593984962,
+    175.5719696969697,
+    815.7878787878788,
+    1624.8264150943396,
+    1872.5568181818182,
+    1592.0,
+    833.8068181818181,
+    185.3560606060606
+   ],
+   "PEN output-minus-input shift (deg)": [
+    -7.293401147690235,
+    6.892066636989686
+   ]
+  }
+ }
+}

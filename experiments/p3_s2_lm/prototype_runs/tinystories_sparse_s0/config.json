@@ -1,0 +1,25 @@
+{
+ "corpus": "tinystories",
+ "arm": "sparse",
+ "seed": 0,
+ "T": 1024,
+ "window": 256,
+ "layer": {
+  "d_k": 64,
+  "d_v": 64,
+  "d_c": 16,
+  "states": [],
+  "x_only_gate": true,
+  "tie_gamma": true,
+  "chunk": 64,
+  "compile_chunk": false,
+  "address": "sparse",
+  "n_cells": 1024,
+  "k_active": 64,
+  "fan_in": 14
+ },
+ "d_model": 384,
+ "n_layers": 8,
+ "n_heads": 6,
+ "attn_every": 4
+}

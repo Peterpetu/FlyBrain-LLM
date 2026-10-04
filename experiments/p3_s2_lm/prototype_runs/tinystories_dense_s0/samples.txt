@@ -1,0 +1,29 @@
+--- sample 1 (tinystories, dense keys) ---
+Once upon a time there was a little girl called Sally who wanted to play with her friends. She ran to her room and said, "I will play with you, Daddy!" But her mom said, "No, you are too expensive. You need to take a break from the kitchen."
+
+So Sally went to her room and said, "I want to play with my friends,Daddy!" Her mother said, "That sounds like not for playing. You can play with your toys if you hide them first."
+
+Sally was not happy, but then she had an idea. She said, "Daddy, can I play with my friends?" Her mom smiled and said, "Of course you can!"
+
+So Sally closed her eyes and played with her friends. Suddenly, she heard a loud noise coming from the kitchen. She stopped and looked around. Everything had changed!
+
+Sally looked around but she couldn't see anything. She said, "Mommy, why is the kitchen
+
+--- sample 2 (tinystories, dense keys) ---
+Once upon a time, there were two friends named Jack and Tom. Tom was a curious little boy who liked to explore. One day, he said to Tom, "What do you want to do?" Tom said, "I need help to reach the top of the hill!" So Tom said, "I will help you, Tom." Tom smiled and said, "Thank you, Tom!"
+
+Tom and Tom went on the hill together. They looked at the top of the hill and said, "This is the most important view we are going!" Tom asked, "Can I climb it?" Tom said, "Yes, but be careful." Tom started to climb the hill, but he was hurt. He said, "I need to go down, Tom. Can you help me?" Tom said, "Yes, I can do it!" Tom said, "I can do it, Tom." Tom laughed and said, "That's good. Now, let's go down." They went down the hill
+
+--- sample 3 (tinystories, dense keys) ---
+Once upon a time, there was a little girl named Lily. She loved to play with her toys and eat yummy cookies. One day, Lily's mommy was talking about her favorite toy in the freezer.
+
+Lily asked, "Mommy, what's that?"
+
+"It's a present that I can play with," Mommy replied.
+
+Lily loved the idea and put the present in the freezer to keep it clean. She played with her toys and ate the yummy spaghetti. She even gave her mommy a big hug and went to bed.
+
+When she woke up, she told her mommy about the surprise. "Mommy, I got a present for you. It's a big, pretty flower," Lily replied, proudly.
+
+Mommy was so happy and gave Lily a big hug. "Thank you, Lily. You're the best!" Lily said, grateful for the surprise and for finding it.
+

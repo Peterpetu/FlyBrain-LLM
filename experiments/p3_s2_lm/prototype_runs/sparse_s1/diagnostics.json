@@ -1,0 +1,385 @@
+{
+ "run": "experiments\\p3_s2_lm\\prototype_runs\\sparse_s1",
+ "corpus": "wikitext103",
+ "arm": "sparse",
+ "window_trained": 512,
+ "window_small": 64,
+ "as_trained": {
+  "val_nll": 4.082797370016327,
+  "val_ppl": 59.31115324467909,
+  "val_tokens": 246784,
+  "probe_recall_near_n": 5077,
+  "probe_recall_near_covered": 5074,
+  "probe_recall_near_acc": 0.7175798186834844,
+  "probe_recall_near_logp": -1.620382799787974,
+  "probe_recall_far_n": 3308,
+  "probe_recall_far_covered": 1521,
+  "probe_recall_far_acc": 0.5509533201840894,
+  "probe_recall_far_logp": -2.910695310577143,
+  "probe_rebind_near_n": 2617,
+  "probe_rebind_near_covered": 2613,
+  "probe_rebind_near_acc": 0.5556831228473019,
+  "probe_rebind_near_logp": -2.2115866508584325,
+  "probe_rebind_far_n": 1358,
+  "probe_rebind_far_covered": 634,
+  "probe_rebind_far_acc": 0.4952681388012618,
+  "probe_rebind_far_logp": -2.687341547692312,
+  "recall_back_0_64_covered": 2020,
+  "recall_back_0_64_acc": 0.7430693069306931,
+  "recall_back_64_256_covered": 2067,
+  "recall_back_64_256_acc": 0.706821480406386,
+  "recall_back_256_512_covered": 984,
+  "recall_back_256_512_acc": 0.6890243902439024,
+  "recall_back_512_1024_covered": 1000,
+  "recall_back_512_1024_acc": 0.545,
+  "recall_back_1024_2048_covered": 524,
+  "recall_back_1024_2048_acc": 0.5610687022900763
+ },
+ "memory_short": {
+  "val_nll": 4.493353260997915,
+  "val_ppl": 89.4207949645095,
+  "val_tokens": 246784,
+  "probe_recall_near_n": 5077,
+  "probe_recall_near_covered": 5074,
+  "probe_recall_near_acc": 0.4966495861253449,
+  "probe_recall_near_logp": -3.028516837649701,
+  "probe_recall_far_n": 3308,
+  "probe_recall_far_covered": 1521,
+  "probe_recall_far_acc": 0.4983563445101907,
+  "probe_recall_far_logp": -3.2207513173883595,
+  "probe_rebind_near_n": 2617,
+  "probe_rebind_near_covered": 2613,
+  "probe_rebind_near_acc": 0.41714504401071567,
+  "probe_rebind_near_logp": -3.1079185806540757,
+  "probe_rebind_far_n": 1358,
+  "probe_rebind_far_covered": 634,
+  "probe_rebind_far_acc": 0.43375394321766564,
+  "probe_rebind_far_logp": -3.0749989680575696,
+  "recall_back_0_64_covered": 2020,
+  "recall_back_0_64_acc": 0.5232673267326733,
+  "recall_back_64_256_covered": 2067,
+  "recall_back_64_256_acc": 0.4833091436865022,
+  "recall_back_256_512_covered": 984,
+  "recall_back_256_512_acc": 0.4715447154471545,
+  "recall_back_512_1024_covered": 1000,
+  "recall_back_512_1024_acc": 0.486,
+  "recall_back_1024_2048_covered": 524,
+  "recall_back_1024_2048_acc": 0.5190839694656488
+ },
+ "window_64": {
+  "val_nll": 4.260455070194862,
+  "val_ppl": 70.84221430033774,
+  "val_tokens": 246784,
+  "probe_recall_near_n": 5077,
+  "probe_recall_near_covered": 5074,
+  "probe_recall_near_acc": 0.5949940875049271,
+  "probe_recall_near_logp": -2.5270920559948156,
+  "probe_recall_far_n": 3308,
+  "probe_recall_far_covered": 1521,
+  "probe_recall_far_acc": 0.5318869165023011,
+  "probe_recall_far_logp": -3.011439329894284,
+  "probe_rebind_near_n": 2617,
+  "probe_rebind_near_covered": 2613,
+  "probe_rebind_near_acc": 0.5304247990815155,
+  "probe_rebind_near_logp": -2.54059377837144,
+  "probe_rebind_far_n": 1358,
+  "probe_rebind_far_covered": 634,
+  "probe_rebind_far_acc": 0.4889589905362776,
+  "probe_rebind_far_logp": -2.7823591639679983,
+  "recall_back_0_64_covered": 2020,
+  "recall_back_0_64_acc": 0.7836633663366337,
+  "recall_back_64_256_covered": 2067,
+  "recall_back_64_256_acc": 0.4567005321722303,
+  "recall_back_256_512_covered": 984,
+  "recall_back_256_512_acc": 0.5,
+  "recall_back_512_1024_covered": 1000,
+  "recall_back_512_1024_acc": 0.522,
+  "recall_back_1024_2048_covered": 524,
+  "recall_back_1024_2048_acc": 0.5477099236641222
+ },
+ "memory_short_window_64": {
+  "val_nll": 4.559083492429425,
+  "val_ppl": 95.49591697931719,
+  "val_tokens": 246784,
+  "probe_recall_near_n": 5077,
+  "probe_recall_near_covered": 5074,
+  "probe_recall_near_acc": 0.4773354355538037,
+  "probe_recall_near_logp": -3.2359946136955986,
+  "probe_recall_far_n": 3308,
+  "probe_recall_far_covered": 1521,
+  "probe_recall_far_acc": 0.49769888231426695,
+  "probe_recall_far_logp": -3.274968857101237,
+  "probe_rebind_near_n": 2617,
+  "probe_rebind_near_covered": 2613,
+  "probe_rebind_near_acc": 0.41676234213547647,
+  "probe_rebind_near_logp": -3.1696930582969425,
+  "probe_rebind_far_n": 1358,
+  "probe_rebind_far_covered": 634,
+  "probe_rebind_far_acc": 0.43217665615141954,
+  "probe_rebind_far_logp": -3.137497574120337,
+  "recall_back_0_64_covered": 2020,
+  "recall_back_0_64_acc": 0.557920792079208,
+  "recall_back_64_256_covered": 2067,
+  "recall_back_64_256_acc": 0.4112239961296565,
+  "recall_back_256_512_covered": 984,
+  "recall_back_256_512_acc": 0.45223577235772355,
+  "recall_back_512_1024_covered": 1000,
+  "recall_back_512_1024_acc": 0.482,
+  "recall_back_1024_2048_covered": 524,
+  "recall_back_1024_2048_acc": 0.5248091603053435
+ },
+ "gates": {
+  "layer0": {
+   "beta_median_per_head": [
+    0.326,
+    0.332,
+    0.301,
+    0.317,
+    0.309,
+    0.325
+   ],
+   "beta_gt_0.5_fraction_per_head": [
+    0.372,
+    0.022,
+    0.001,
+    0.025,
+    0.0,
+    0.011
+   ],
+   "alpha_median_per_head": [
+    0.299,
+    0.9996,
+    0.9995,
+    0.9998,
+    0.9999,
+    1.0
+   ],
+   "half_life_tokens_per_head": [
+    0.6,
+    1895.5,
+    1423.0,
+    3837.6,
+    7276.9,
+    19253.1
+   ],
+   "half_life_tokens_p90_per_head": [
+    45.5,
+    19710.0,
+    19478.8,
+    35027.0,
+    505611.8,
+    5814539.6
+   ]
+  },
+  "layer1": {
+   "beta_median_per_head": [
+    0.803,
+    0.8,
+    0.354,
+    0.233,
+    0.298,
+    0.297
+   ],
+   "beta_gt_0.5_fraction_per_head": [
+    0.967,
+    0.922,
+    0.078,
+    0.015,
+    0.022,
+    0.028
+   ],
+   "alpha_median_per_head": [
+    0.8094,
+    0.9424,
+    0.9947,
+    0.9995,
+    0.9989,
+    0.9989
+   ],
+   "half_life_tokens_per_head": [
+    3.3,
+    11.7,
+    129.4,
+    1532.2,
+    639.1,
+    614.3
+   ],
+   "half_life_tokens_p90_per_head": [
+    27.0,
+    215.2,
+    2886.0,
+    10888.3,
+    31010.5,
+    5156.7
+   ]
+  },
+  "layer2": {
+   "beta_median_per_head": [
+    0.62,
+    0.253,
+    0.211,
+    0.184,
+    0.194,
+    0.218
+   ],
+   "beta_gt_0.5_fraction_per_head": [
+    0.796,
+    0.04,
+    0.014,
+    0.012,
+    0.006,
+    0.006
+   ],
+   "alpha_median_per_head": [
+    0.9721,
+    0.9978,
+    0.9994,
+    0.9985,
+    0.9984,
+    0.9988
+   ],
+   "half_life_tokens_per_head": [
+    24.5,
+    320.8,
+    1134.4,
+    471.7,
+    422.7,
+    595.3
+   ],
+   "half_life_tokens_p90_per_head": [
+    566.9,
+    1231.3,
+    3420.0,
+    1022.1,
+    1651.0,
+    997.3
+   ]
+  },
+  "layer4": {
+   "beta_median_per_head": [
+    0.555,
+    0.495,
+    0.425,
+    0.236,
+    0.193,
+    0.295
+   ],
+   "beta_gt_0.5_fraction_per_head": [
+    0.562,
+    0.495,
+    0.381,
+    0.071,
+    0.038,
+    0.056
+   ],
+   "alpha_median_per_head": [
+    0.5695,
+    0.9635,
+    0.9876,
+    0.9992,
+    0.9997,
+    0.9985
+   ],
+   "half_life_tokens_per_head": [
+    1.2,
+    18.7,
+    55.4,
+    909.2,
+    2354.2,
+    474.7
+   ],
+   "half_life_tokens_p90_per_head": [
+    149.0,
+    992.1,
+    3689.1,
+    23073.2,
+    33609.7,
+    2648.0
+   ]
+  },
+  "layer5": {
+   "beta_median_per_head": [
+    0.611,
+    0.474,
+    0.3,
+    0.19,
+    0.22,
+    0.266
+   ],
+   "beta_gt_0.5_fraction_per_head": [
+    0.628,
+    0.441,
+    0.149,
+    0.031,
+    0.044,
+    0.009
+   ],
+   "alpha_median_per_head": [
+    0.8672,
+    0.9473,
+    0.999,
+    0.9998,
+    0.9982,
+    0.999
+   ],
+   "half_life_tokens_per_head": [
+    4.9,
+    12.8,
+    705.9,
+    3376.3,
+    390.6,
+    672.4
+   ],
+   "half_life_tokens_p90_per_head": [
+    282.2,
+    227.2,
+    8816.2,
+    17177.0,
+    2054.3,
+    2363.3
+   ]
+  },
+  "layer6": {
+   "beta_median_per_head": [
+    0.425,
+    0.157,
+    0.261,
+    0.216,
+    0.209,
+    0.258
+   ],
+   "beta_gt_0.5_fraction_per_head": [
+    0.403,
+    0.012,
+    0.061,
+    0.074,
+    0.05,
+    0.04
+   ],
+   "alpha_median_per_head": [
+    0.7938,
+    0.9997,
+    0.9981,
+    0.9986,
+    0.9987,
+    0.9994
+   ],
+   "half_life_tokens_per_head": [
+    3.0,
+    2523.3,
+    364.6,
+    500.6,
+    523.5,
+    1070.3
+   ],
+   "half_life_tokens_p90_per_head": [
+    27.4,
+    5055.8,
+    2402.4,
+    3442.2,
+    2645.0,
+    5938.9
+   ]
+  }
+ }
+}

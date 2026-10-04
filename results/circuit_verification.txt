@@ -1,0 +1,137 @@
+== whole CNS
+{
+ "n_neurons": 166700,
+ "n_edges": 10520431,
+ "n_contacts": 101422396,
+ "frac_inhibitory": 0.3081643671265747,
+ "density": 0.0003785863382935624,
+ "outdeg_mean": 63.10996400719856,
+ "outdeg_median": 45.0,
+ "outdeg_max": 7749,
+ "indeg_mean": 63.10996400719856,
+ "indeg_max": 9193,
+ "contacts_per_edge_mean": 9.640517199342879,
+ "n_edges_zero_weight": 332316,
+ "n_cell_types": 11770,
+ "frac_typed": 1.0,
+ "w_norm": 0.003000000026077032
+}
+== mushroom_body_L
+   side: L
+   n_PN: 120
+   n_PN_types: 60
+   n_KC: 2019
+   n_APL: 1
+   n_DPM: 1
+   n_MBON: 48
+   n_PAM: 158
+   n_PPL1: 8
+   n_compartments_MBON: 32
+   frac_KC_with_PN_input: 0.9271916790490342
+   KC_fan_in_PN_neurons_mean: 5.297542735042735
+   KC_fan_in_PN_types_mean: 5.156517094017094
+   KC_fan_in_PN_types_median: 5.0
+   PN_fan_out_KC_mean: 82.64166666666667
+   PN_KC_contacts: 183709
+   PN_KC_edges: 9917
+   APL_covers_frac_KC: 1.0
+   KC_MBON_edges: 17931
+   MBON_fan_in_KC_mean: 373.5625
+   DAN_KC_edges: 7212
+   DAN_MBON_edges: 486
+   MBON_DAN_feedback_edges: 339
+   MBON_DAN_feedback_contacts: 2861
+   MBON_MBON_edges: 282
+   KC_KC_edges: 56963
+   APL_nt: ['gaba']
+   DPM_nt: ['dopamine']
+   frac_KC_inhibitory_flag: 0.0
+   [PASS] KC_count_~2000_per_hemisphere: 2019
+   [PASS] APL_single_neuron_GABA: ['gaba']
+   [PASS] APL_inhibits_>95%_KC: 1.0
+   [PASS] KC_fan_in_PN_types_5-7_(Caron2013): 5.156517094017094
+   [PASS] MBON_~20-40_types_per_side: 48
+   [PASS] MBON_DAN_feedback_exists: 339
+   [PASS] DAN_target_MBON_dendrites_(compartment_coupling): 486
+   [PASS] PAM_>>PPL1_in_count: (158, 8)
+   [PASS] KC_excitatory_(cholinergic): 0.0
+== mushroom_body_R
+   side: R
+   n_PN: 119
+   n_PN_types: 61
+   n_KC: 2045
+   n_APL: 1
+   n_DPM: 1
+   n_MBON: 49
+   n_PAM: 158
+   n_PPL1: 8
+   n_compartments_MBON: 32
+   frac_KC_with_PN_input: 0.9251833740831296
+   KC_fan_in_PN_neurons_mean: 5.231501057082452
+   KC_fan_in_PN_types_mean: 5.06553911205074
+   KC_fan_in_PN_types_median: 5.0
+   PN_fan_out_KC_mean: 83.17647058823529
+   PN_KC_contacts: 189838
+   PN_KC_edges: 9898
+   APL_covers_frac_KC: 0.9995110024449878
+   KC_MBON_edges: 17985
+   MBON_fan_in_KC_mean: 367.0408163265306
+   DAN_KC_edges: 6177
+   DAN_MBON_edges: 478
+   MBON_DAN_feedback_edges: 300
+   MBON_DAN_feedback_contacts: 2605
+   MBON_MBON_edges: 255
+   KC_KC_edges: 60418
+   APL_nt: ['gaba']
+   DPM_nt: ['dopamine']
+   frac_KC_inhibitory_flag: 0.0
+   [PASS] KC_count_~2000_per_hemisphere: 2045
+   [PASS] APL_single_neuron_GABA: ['gaba']
+   [PASS] APL_inhibits_>95%_KC: 0.9995110024449878
+   [PASS] KC_fan_in_PN_types_5-7_(Caron2013): 5.06553911205074
+   [PASS] MBON_~20-40_types_per_side: 49
+   [PASS] MBON_DAN_feedback_exists: 300
+   [PASS] DAN_target_MBON_dendrites_(compartment_coupling): 478
+   [PASS] PAM_>>PPL1_in_count: (158, 8)
+   [PASS] KC_excitatory_(cholinergic): 0.0
+== central_complex
+   EPG: 46
+   PEN_a: 20
+   PEN_b: 22
+   PEG: 18
+   Delta7: 42
+   EL: 18
+   ExR: 26
+   n_core: 148
+   edges_core: 7216
+   contacts_core: 136003
+   frac_with_angle: 1.0
+   [PASS] EPG_46_(hemibrain 46): 46
+   [PASS] PEN_42_(hemibrain 20 PEN_a + 22 PEN_b): (20, 22)
+   [PASS] Delta7_42_(hemibrain 42): 42
+   [PASS] PEG_18_(hemibrain 18): 18
+   [PASS] EPG_cholinergic: None
+   [PASS] Delta7_glutamatergic_(inhibitory): None
+   [PASS] EPG->EPG_peaks_at_offset0: [27.7, 6.6, 0.2, 0.0, 0.1, 0.0, 0.1, 6.7]
+   [PASS] PEN_output_vs_input_shift_opposite_sign_per_side: {'L': -7.293401147690235, 'R': 6.892066636989686}
+   [PASS] EPG->Delta7_input_peaks_opposite_(offset4): [1.1, 1.8, 9.5, 18.8, 21.0, 17.4, 8.6, 1.7]
+   [PASS] Delta7_output_local_(offset0_max): [13.5, 2.0, 0.0, 0.0, 0.1, 0.0, 0.0, 1.4]
+   [PASS] effective_EPG->D7->EPG_inhibition_min_at_0_max_opposite: [117.0, 176.0, 816.0, 1625.0, 1873.0, 1592.0, 834.0, 185.0]
+   [PASS] PEN_L_and_PEN_R_shift_bump_opposite_ways: {'L': [9.4, 0.4, 0.0, 0.0, 0.1, 8.1, 92.7, 93.0], 'R': [7.3, 95.7, 88.0, 7.0, 0.0, 0.0, 0.0, 0.0]}
+   profile EPG->EPG: [27.7, 6.6, 0.2, 0.0, 0.1, 0.0, 0.1, 6.7]
+   profile EPG->PEN_a: [7.6, 11.0, 10.9, 0.8, 0.0, 0.4, 10.7, 11.0]
+   profile EPG->PEN_b: [5.7, 11.6, 9.8, 0.0, 0.0, 0.0, 10.0, 12.0]
+   profile PEN_a->EPG: [7.5, 27.8, 26.7, 3.2, 0.0, 3.8, 27.8, 27.6]
+   profile PEN_b->EPG: [0.9, 20.8, 16.8, 0.3, 0.0, 0.3, 18.0, 19.4]
+   profile EPG->Delta7: [1.1, 1.8, 9.5, 18.8, 21.0, 17.4, 8.6, 1.7]
+   profile Delta7->EPG: [13.5, 2.0, 0.0, 0.0, 0.1, 0.0, 0.0, 1.4]
+   profile Delta7->PEN_a: [8.4, 1.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.8]
+   profile Delta7->Delta7: [15.8, 9.6, 13.3, 18.7, 19.7, 18.2, 13.8, 10.5]
+   profile EPG->PEG: [42.8, 4.2, 2.2, 0.2, 2.3, 0.1, 2.5, 3.3]
+   profile PEG->EPG: [4.4, 0.7, 0.5, 0.0, 0.6, 0.0, 0.6, 0.8]
+   profile PEN_a[L]->EPG: [8.4, 0.4, 0.0, 0.0, 0.1, 7.6, 56.2, 54.8]
+   profile PEN_a[R]->EPG: [6.5, 54.8, 53.9, 6.4, 0.0, 0.0, 0.0, 0.0]
+   profile PEN_b[L]->EPG: [0.9, 0.0, 0.0, 0.0, 0.0, 0.5, 36.5, 38.2]
+   profile PEN_b[R]->EPG: [0.8, 40.9, 34.1, 0.6, 0.0, 0.0, 0.0, 0.0]
+   profile EPG->Delta7->EPG (effective inhibition): [116.7, 175.6, 815.8, 1624.8, 1872.6, 1592.0, 833.8, 185.4]
+   profile PEN output-minus-input shift (deg): [-7.3, 6.9]

@@ -1,0 +1,27 @@
+--- sample 1 (tinystories, sparse keys) ---
+Once upon a time there was a little girl called Sally who wanted to play with her friends. She decided to explore the wide world and found a very big pole. She took it with her and started to climb inside. Suddenly the pole was very heavy. 
+
+Sally asked her friends, "What is that?" 
+
+"It's something that helps us climb," said her friend. 
+
+Sally thought for a while and then decided to try to climb the pole. But then she accidentally stepped on the pole and it fell off! Sally was very sad and started to cry. 
+
+Suddenly, there was a loud snap and Sally remembered something. She got up to the pole and said, "Let's use this pole to help us out and see what's inside!" 
+
+Sally was so surprised and happy. She thanked her friend and promised to use the pole. She spent the rest of the day exploring the park, until it was time to go home. She
+
+--- sample 2 (tinystories, sparse keys) ---
+Once upon a time, there was a little girl named Lily. She loved to play with her toys all day long. One day, she found a toy she really wanted. It was a pretty dress with a star on it. Lily thought it was so pretty.
+
+But then, her mommy came in and told her to stop playing. Lily didn't want to stop playing, so she ran away. On the way home, she saw something shiny on the floor. It was a shiny silver coin! Lily was so happy and proud of herself.
+
+Lily learned that sometimes, things happen and it's okay to complain. She learned that even if they seem scary, they can still be real. From that day on, Lily always looked out for shiny things on her clothes.
+
+--- sample 3 (tinystories, sparse keys) ---
+Once upon a time, there was a little girl named Lily. She loved to play with her toys, but her favorite was a big toy car that she loved to play with. One day, Lily's dad said, "We need to be organized and put a lot of toys. Let's clean up our toys and put them away."
+
+Lily said, "Okay, I will help you." They cleaned up the toys and put them back in the big box. Soon, the toys were clean and tidy, and they said, "Thank you, Mom!" Lily smiled and said, "You're welcome, Mom. I love you." 
+
+The end.
+

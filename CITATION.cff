@@ -1,0 +1,84 @@
+cff-version: 1.2.0
+title: "FlyBrainLLM: does the Drosophila connectome contain computational principles that improve sequence models?"
+message: "If you use this repository, please cite it and the MaleCNS v1.0 data release."
+type: software
+authors:
+  - family-names: Laht
+    given-names: Petu
+repository-code: "https://github.com/Peterpetu/FlyBrain-LLM"
+license: MIT
+version: 0.3.0
+date-released: 2026-10-03
+references:
+  - type: article
+    title: "Sexual dimorphism in the complete Drosophila male central nervous system connectome"
+    authors:
+      - family-names: Berg
+        given-names: S.
+      - name: "and the MaleCNS consortium"
+    journal: Cell
+    year: 2026
+  - type: article
+    title: "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    authors:
+      - family-names: Yang
+        given-names: Songlin
+      - family-names: Kautz
+        given-names: Jan
+      - family-names: Hatamizadeh
+        given-names: Ali
+    year: 2025
+    conference:
+      name: "International Conference on Learning Representations"
+    identifiers:
+      - type: other
+        value: "arXiv:2412.06464"
+    notes: "The baseline layer of the phase-3 trained-model rungs; every Gated DeltaNet number in this repository comes from runs made here, never from the paper."
+  - type: article
+    title: "Large Memory Layers with Product Keys"
+    authors:
+      - family-names: Lample
+        given-names: Guillaume
+      - family-names: Sablayrolles
+        given-names: Alexandre
+      - family-names: Ranzato
+        given-names: Marc'Aurelio
+      - family-names: Denoyer
+        given-names: Ludovic
+      - family-names: Jégou
+        given-names: Hervé
+    year: 2019
+    conference:
+      name: "Advances in Neural Information Processing Systems"
+    identifiers:
+      - type: other
+        value: "arXiv:1907.05242"
+    notes: "The product-key control of rung 1b."
+  - type: article
+    title: "Pointer Sentinel Mixture Models"
+    authors:
+      - family-names: Merity
+        given-names: Stephen
+      - family-names: Xiong
+        given-names: Caiming
+      - family-names: Bradbury
+        given-names: James
+      - family-names: Socher
+        given-names: Richard
+    year: 2016
+    identifiers:
+      - type: other
+        value: "arXiv:1609.07843"
+    notes: "WikiText-103 (and WikiText-2), used by the D1 corpus diagnostic and the exploratory language-model prototypes."
+  - type: article
+    title: "TinyStories: How Small Can Language Models Be and Still Speak Coherent English?"
+    authors:
+      - family-names: Eldan
+        given-names: Ronen
+      - family-names: Li
+        given-names: Yuanzhi
+    year: 2023
+    identifiers:
+      - type: other
+        value: "arXiv:2305.07759"
+    notes: "The corpus of the exploratory TinyStories prototype."

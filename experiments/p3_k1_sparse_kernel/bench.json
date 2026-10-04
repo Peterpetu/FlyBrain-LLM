@@ -1,0 +1,138 @@
+{
+ "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+ "note": "eager unless marked compiled; the GPU may be shared with other jobs",
+ "sizes": {
+  "rung 1b (d_k 16, 256 cells, 16 on; B 64, H 4, T 512, d_v 32)": {
+   "dense (equal width)": {
+    "ms_per_forward": 28.53887939453125,
+    "us_per_token": 0.8709374815225601,
+    "macs_per_head_token_as_implemented": 4416,
+    "macs_per_head_token_sparse_kernel": 4416,
+    "rows": 16,
+    "active_rows": 16
+   },
+   "sparse, as implemented": {
+    "ms_per_forward": 45.490177154541016,
+    "us_per_token": 1.3882500352337956,
+    "macs_per_head_token_as_implemented": 35648,
+    "macs_per_head_token_sparse_kernel": 6464,
+    "rows": 256,
+    "active_rows": 16
+   },
+   "sparse, k-sparse step": {
+    "ms_per_forward": 63.27500915527344,
+    "us_per_token": 1.9310000352561474,
+    "macs_per_head_token_as_implemented": 35648,
+    "macs_per_head_token_sparse_kernel": 6464,
+    "rows": 256,
+    "active_rows": 16
+   },
+   "dense (equal memory)": {
+    "ms_per_forward": 36.11750411987305,
+    "us_per_token": 1.102218753658235,
+    "macs_per_head_token_as_implemented": 27456,
+    "macs_per_head_token_sparse_kernel": 27456,
+    "rows": 256,
+    "active_rows": 256
+   },
+   "dense (equal width), compiled": {
+    "ms_per_forward": 7.407616138458252,
+    "us_per_token": 0.22606250422541052,
+    "macs_per_head_token_as_implemented": 4416,
+    "macs_per_head_token_sparse_kernel": 4416,
+    "rows": 16,
+    "active_rows": 16
+   },
+   "sparse, as implemented, compiled": {
+    "ms_per_forward": 30.050304412841797,
+    "us_per_token": 0.9170625125989318,
+    "macs_per_head_token_as_implemented": 35648,
+    "macs_per_head_token_sparse_kernel": 6464,
+    "rows": 256,
+    "active_rows": 16
+   },
+   "sparse, k-sparse step, compiled": {
+    "ms_per_forward": 43.809791564941406,
+    "us_per_token": 1.3369687367230654,
+    "macs_per_head_token_as_implemented": 35648,
+    "macs_per_head_token_sparse_kernel": 6464,
+    "rows": 256,
+    "active_rows": 16
+   },
+   "dense (equal memory), compiled": {
+    "ms_per_forward": 21.4466552734375,
+    "us_per_token": 0.6544999778270721,
+    "macs_per_head_token_as_implemented": 27456,
+    "macs_per_head_token_sparse_kernel": 27456,
+    "rows": 256,
+    "active_rows": 256
+   }
+  },
+  "language model (d_k 64, 1,024 cells, 64 on; B 8, H 6, T 2048, d_v 64)": {
+   "dense (equal width)": {
+    "ms_per_forward": 119.4065933227539,
+    "us_per_token": 7.288000080734491,
+    "macs_per_head_token_as_implemented": 17216,
+    "macs_per_head_token_sparse_kernel": 17216,
+    "rows": 64,
+    "active_rows": 64
+   },
+   "sparse, as implemented": {
+    "ms_per_forward": 173.45126342773438,
+    "us_per_token": 10.586624965071678,
+    "macs_per_head_token_as_implemented": 332608,
+    "macs_per_head_token_sparse_kernel": 45888,
+    "rows": 1024,
+    "active_rows": 64
+   },
+   "sparse, k-sparse step": {
+    "ms_per_forward": 200.85452270507812,
+    "us_per_token": 12.259187176823616,
+    "macs_per_head_token_as_implemented": 332608,
+    "macs_per_head_token_sparse_kernel": 45888,
+    "rows": 1024,
+    "active_rows": 64
+   },
+   "dense (equal memory)": {
+    "ms_per_forward": 155.70022583007812,
+    "us_per_token": 9.503187611699104,
+    "macs_per_head_token_as_implemented": 201536,
+    "macs_per_head_token_sparse_kernel": 201536,
+    "rows": 1024,
+    "active_rows": 1024
+   },
+   "dense (equal width), compiled": {
+    "ms_per_forward": 26.554367065429688,
+    "us_per_token": 1.620749942958355,
+    "macs_per_head_token_as_implemented": 17216,
+    "macs_per_head_token_sparse_kernel": 17216,
+    "rows": 64,
+    "active_rows": 64
+   },
+   "sparse, as implemented, compiled": {
+    "ms_per_forward": 87.1229476928711,
+    "us_per_token": 5.317562725394964,
+    "macs_per_head_token_as_implemented": 332608,
+    "macs_per_head_token_sparse_kernel": 45888,
+    "rows": 1024,
+    "active_rows": 64
+   },
+   "sparse, k-sparse step, compiled": {
+    "ms_per_forward": 129.7039337158203,
+    "us_per_token": 7.916499860584736,
+    "macs_per_head_token_as_implemented": 332608,
+    "macs_per_head_token_sparse_kernel": 45888,
+    "rows": 1024,
+    "active_rows": 64
+   },
+   "dense (equal memory), compiled": {
+    "ms_per_forward": 77.21369934082031,
+    "us_per_token": 4.71275020390749,
+    "macs_per_head_token_as_implemented": 201536,
+    "macs_per_head_token_sparse_kernel": 201536,
+    "rows": 1024,
+    "active_rows": 1024
+   }
+  }
+ }
+}

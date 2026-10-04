@@ -1,0 +1,24 @@
+{
+ "source": "Salesforce/wikitext, wikitext-103-raw-v1",
+ "tokenizer": "gpt2 (BPE, 50,257 tokens)",
+ "splits": {
+  "train": {
+   "tokens": 117920140,
+   "characters": 538294333,
+   "bin_sha256": "d5ad8fbcec7265eb2024ac768aa7fceccedf8205f22aa490cbf6d8a383239755",
+   "text_sha256": "1f9f77ec26e7477b7bf3c80c72a2e365749731f3b41b81af08ef16d29a4c0c80"
+  },
+  "validation": {
+   "tokens": 247289,
+   "characters": 1142150,
+   "bin_sha256": "779d0535788af8d1a8c617fe868d8ded86cd8f69a7d604849e17e1936043ada8",
+   "text_sha256": "8ef749789ca0693435d20b3f81d5638c19edcebc5a68586dcf09bdf47ef9542f"
+  },
+  "test": {
+   "tokens": 283287,
+   "characters": 1285622,
+   "bin_sha256": "e8497e99f24f302a3915759761ab5a448e2935a9f75a15f5a0d14c6838ea86aa",
+   "text_sha256": "bbf94c53a05abe9ee670d3b6343608095822c85e26de37c70b24fc571964574a"
+  }
+ }
+}
