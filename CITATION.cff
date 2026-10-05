@@ -1,14 +1,16 @@
 cff-version: 1.2.0
-title: "FlyBrainLLM: does the Drosophila connectome contain computational principles that improve sequence models?"
-message: "If you use this repository, please cite it and the MaleCNS v1.0 data release."
+message: "If you use this work, build on it, or report results obtained with it, please cite it as below."
 type: software
+title: "FlyBrainLLM: does the Drosophila connectome contain computational principles that improve sequence models?"
 authors:
-  - family-names: Laht
-    given-names: Petu
+  - family-names: Lahtinen
+    given-names: Peter
+date-released: 2026-10-05
+url: "https://github.com/Peterpetu/FlyBrain-LLM"
 repository-code: "https://github.com/Peterpetu/FlyBrain-LLM"
-license: MIT
-version: 0.3.0
-date-released: 2026-10-03
+license:
+  - Apache-2.0
+  - CC-BY-4.0
 references:
   - type: article
     title: "Sexual dimorphism in the complete Drosophila male central nervous system connectome"

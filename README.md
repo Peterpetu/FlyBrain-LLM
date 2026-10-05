@@ -235,6 +235,21 @@ Research), CC-BY-4.0, via the `garyb9/fly-drone` binary mirror whose provenance 
 verified against the official Janelia release (`data/circuits/ATTRIBUTION.md`).
 Synapse counts are anatomical contact counts standing in for unmeasured synaptic strengths.
 
-## License
+## License and citation
 
-MIT for code. Derived connectome files in `data/circuits/` are CC-BY-4.0.
+The code and any released weights are licensed under the Apache License 2.0 (`LICENSE`); the documentation, figures and data under CC BY 4.0. Both require attribution: a copy or derivative of the code keeps the `NOTICE` file, and any reuse of the text, figures or data credits the author and links to the source. The derived connectome files in `data/circuits/` are built from the MaleCNS v1.0 release; cite that release alongside this repository when you use them.
+
+If you use this work, build on it, or report results obtained with it, cite it:
+
+> Lahtinen, P. (2026). *FlyBrainLLM: does the Drosophila connectome contain computational principles that improve sequence models?* https://github.com/Peterpetu/FlyBrain-LLM
+
+```bibtex
+@misc{lahtinen2026flybrain,
+  author = {Lahtinen, Peter},
+  title  = {FlyBrainLLM: does the Drosophila connectome contain computational principles that improve sequence models?},
+  year   = {2026},
+  url    = {https://github.com/Peterpetu/FlyBrain-LLM}
+}
+```
+
+`CITATION.cff` carries the same reference for GitHub's "Cite this repository" button and for reference managers.
